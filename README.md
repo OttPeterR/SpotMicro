@@ -14,25 +14,50 @@ I'm updating things as I go, then I'll turn it all into a nice blog post or some
 1. [Simulation](#simulation)
 
 ## Parts
-Parts list of all things needed. Acquire them from wherever you prefer.
-- Raspberry Pi - I'm using a Zero W, but there are 3D chassis models that support a full sized Pi or an Nvidia Jetson
-- 12x Servo Motors - MG996R High Torque (60-80$ total)
-- Servo horns (these can be 3D printed if really needed)
+
+#### 3D Printed Parts
+I'm using the parts from [v1.02](https://gitlab.com/custom_robots/spotmicroai/3dprinting/-/tree/master/Basic%203d%20parts%20by%20Brad%20Prince/v1.02), but there is also the [Thingiverse original](https://www.thingiverse.com/thing:3445283) by KDY
+
+Parts List: 
+- 4x(foot, wrist, mid limb, mid limb cover, hind limb)
+- Chassis, Chassis L, Chassis R
+- Front Shoulder Inner, Outer
+- Rear Shoulder Inner, Outer
+- Cover Top, Bottom, Nose, Rear
+
+In total there are 31 pieces. The "cover" pieces are typically printed in an accent color, like yellow.
+
+Currently I'm about 20% done printing it all, and I'd estimate it'll take about a week of straight printing if nothing goes wrong.
+
+#### Circuits
+- Any Raspberry Pi - I'm using a Pi Zero W (15$)
+    - Make sure your Pi has the header pins for wiring
+    - Any model RPi will do though (15-60$)
+    - Also Nvidia Jetson if you're a baller (100$)
+- 16GB or 32GB SD Card (Samsung and SanDisk are quality) (10$)
 - Servo Controller with i2c - PCA 9685 (< 10$)
-- 2x 4,000 mAh LiPo Batteries - S2 or S3 connector, 50C or higher rating (25$ each)
-- LiPo Charger - Match S2 or S3 connector, 1.5A minimum (20$)
 - 3 Axis Gyro Accelerometer - MPU 6050 (10$)
+- LCD Display 16x2 with i2c (15$)
+- Breadboards (?)
+- Wires (?)
+- Soldering Iron + Solder (15$)
+
+#### Motors and Power
+- 12x Servo Motors - MG996R High Torque (60$ total)
+    - Also servo horns (these can be 3D printed if really needed)
+- 2x 4,000 mAh 7.4V LiPo Batteries - S2 or S3 connector, 50C or higher rating (25$ each)
+- LiPo Charger - Match S2 or S3 connector, 1.5A minimum (20$)
 - UBEC with 3A 5V output
-- LCD Display 16x2 with i2c
+
+#### Other Hardware
 - Rocker switch
-- Breadboards
-- Wires
-- Soldering Iron + Solder
 - Bunch of M3, M4, M5 screws and nuts
+    - Will update with actual numbers later
+- 8x Ball Bearing - F625zz
 
 
 ## Assembly
-How to put together the larger physical peices. Basic routing of servo wires, but actual wiring will be in the [Electronics](#electronics) section.
+How to put together the larger physical pieces. Basic routing of servo wires, but actual wiring will be in the [Electronics](#electronics) section.
 
 WIP
 
