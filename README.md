@@ -1,4 +1,5 @@
-# SpotMicro
+# Spot Micro
+![Spot Micro](https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_complete.png)
 
 My own personal build and implementation of the Spot Micro quadruped \
 More info about the open source version can be found at their [website](https://gitlab.com/custom_robots/spotmicroai).
@@ -57,7 +58,7 @@ Currently I'm about 20% done printing it all, and I'd estimate it'll take about 
 
 
 ## Assembly
-How to put together the larger physical pieces. Basic routing of servo wires, but actual wiring will be in the [Electronics](#electronics) section.
+
 
 WIP
 
@@ -157,7 +158,8 @@ in the command above, replace `buster` with `jessie` or `stretch` if you're on o
 `echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc`
 
 
-WIP
+### Install on MacOS
+follow [this](https://index.ros.org/doc/ros2/Installation/Foxy/macOS-Install-Binary/)
 
 ## Simulation
 Virtual simulation of the Spot Micro, no physical robot necessary.
