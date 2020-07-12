@@ -58,6 +58,23 @@ Currently I'm about 20% done printing it all, and I'd estimate it'll take about 
 
 
 ## Assembly
+All 3D Printed parts:
+
+<img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_complete.png" width="450">
+
+This is where your build may differ, Fran Ferri made a [3D model](https://gitlab.com/custom_robots/spotmicroai/3dprinting/-/tree/master/User%20Fran%20Ferri%20models) that has the rear shoulders flipped for easier servo access.\
+What's important here is that you know which direction the shoulders fit.\
+The order of the pieces goes: Shoulder on the bottom, then Nose/Rear Cover, then Body Cover on the top. Refer to the completed picture above.\
+<img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_chassis.png" width="300"> <img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_chassis_front.png" width="250"> <img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_chassis_back.png" width="250">
+
+
+See how the shoulder servo mounts are oriented, with the peg facing toward the rear so then the servo is pointed forward.\
+It should also be clear enough from the images how to assemble the upper part of the leg. (Wires route through it, so don't put it together just yet)\
+Also the end parts of the legs should be oriented like so.\
+<img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_legs.png" width="350"> <img src="https://raw.githubusercontent.com/OttPeterR/SpotMicro/master/readme_assets/spot_micro_leg.png" height="250">
+
+
+
 
 
 WIP
