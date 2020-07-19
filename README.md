@@ -36,7 +36,9 @@ Currently I'm about 20% done printing it all, and I'd estimate it'll take about 
     - Any model RPi will do though (15-60$)
     - Also Nvidia Jetson if you're a baller (100$)
 - 16GB or 32GB SD Card (Samsung and SanDisk are quality) (10$)
-- Servo Controller with i2c - PCA 9685 (< 10$)
+- (Changed) Servo Controller with i2c - PCA 9685 (< 10$)
+    - custom made servo controller (15$)
+    - Teensy 4.1 (30$)
 - 3 Axis Gyro Accelerometer - MPU 6050 (10$)
 - LCD Display 16x2 with i2c (15$)
 - Breadboards (?)
@@ -82,6 +84,8 @@ WIP
 
 ## Electronics
 Wiring the breadboards and getting the batteries to all work.
+
+The community has generally found the PCA 9685 servo controller to be a little too jittery. So to fix this, the awesome dudes who put their freetime into this hobby project made a custom board that houses a Teensy 4.1. Super awesome work!
 
 WIP
 
