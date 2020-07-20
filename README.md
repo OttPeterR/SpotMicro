@@ -46,7 +46,8 @@ Currently I'm about 20% done printing it all, and I'd estimate it'll take about 
 - Soldering Iron + Solder (15$)
 
 #### Motors and Power
-- 12x Servo Motors - MG996R High Torque (60$ total)
+- (Could change) 12x Servo Motors - MG996R High Torque (60$ total)
+    - These might be too weak, will have to see when they get here, might need to upgrade to more torque
     - Also servo horns (these can be 3D printed if really needed)
 - 2x 4,000 mAh 7.4V LiPo Batteries - S2 or S3 connector, 50C or higher rating (25$ each)
 - LiPo Charger - Match S2 or S3 connector, 1.5A minimum (20$)
