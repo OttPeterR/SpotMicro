@@ -28,7 +28,7 @@ Parts List:
 
 In total there are 31 pieces. The "cover" pieces are typically printed in an accent color, like yellow.
 
-Currently I'm about 20% done printing it all, and I'd estimate it'll take about a week of straight printing if nothing goes wrong.
+The entire printing took about a week on my slow Ender 3
 
 #### Circuits
 - Any Raspberry Pi - I'm using a Pi Zero W (15$)
@@ -54,10 +54,11 @@ Currently I'm about 20% done printing it all, and I'd estimate it'll take about 
 - UBEC with 3A 5V output
 
 #### Other Hardware
-- Rocker switch
+- Rocker switch for battery cutoff
 - Bunch of M3, M4, M5 screws and nuts
     - Will update with actual numbers later
 - 8x Ball Bearing - F625zz
+    - possibly more, maybe 16 total
 
 
 ## Assembly
@@ -91,6 +92,9 @@ The community has generally found the PCA 9685 servo controller to be a little t
 WIP
 
 ## Software
+
+If you're looking to install it on your desktop, check the [simulation](#Simulation) section.
+
 #### Have some operating system already installed
 Some kinda linux should be fine. For my RPi Zero W I'm using Raspbian Buster. If you pick something different: YMMV. This is well documented enough many other places. If you're new to this, go look up the NOOBS installer, it's fantastically easy to use.
 
@@ -109,7 +113,7 @@ Initialize the newly increased swap file:\
 Start swap back up again:\
 `sudo dphys-swapfile swapon`
 
-### Install ROS Kinetic
+### Install ROS Kinetic on Raspberry Pi
 
 ROS is Robot Operating System. There are a lot of steps to this and it took my slow little Pi Zero about 6 hours to run all of the compilation. Follow [their instructions](http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi) and come back here or follow mine below (they're the same). They warned about a few issues that could arrise, but I was lucky and did not encounter any of them. This is likely due to their patching and me using a clean install or Raspbian without putting anything else on it. YMMV.
 
@@ -180,10 +184,27 @@ in the command above, replace `buster` with `jessie` or `stretch` if you're on o
 `echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc`
 
 
-### Install on MacOS
-follow [this](https://index.ros.org/doc/ros2/Installation/Foxy/macOS-Install-Binary/)
-
 ## Simulation
-Virtual simulation of the Spot Micro, no physical robot necessary.
+### Install ROS Noetic on an Ubuntu
+The [official ROS guide](http://wiki.ros.org/noetic/Installation/Ubuntu) is easy to follow and works with apt, so its very straightforward.\
+Here's a copy-paste of it though:
 
-WIP
+Setup sources:\
+`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+
+Setup keys:\
+`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`\
+`curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -
+`
+
+Update and Install:\
+`sudo apt update`\
+`sudo apt install ros-noetic-desktop-full`
+
+
+#### Install catkin on Ubuntu
+`sudo apt-get install ros-noetic-catkin`
+
+Or you could install from source via the [official ROS guide](https://wiki.ros.org/catkin).
+
+
